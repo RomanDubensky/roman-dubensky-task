@@ -1,13 +1,18 @@
 .car-details,
 .addinfo {
   display: flex;
+  padding: 15px;
 }
 
 .car-information,
 .driver-information,
 .info {
   width: 100%;
-  padding: 15px;
+}
+.car-information {
+  width: 100%;
+  padding-left: 167px;
+
 }
 .depinfo,
 .arrinfo {
@@ -18,14 +23,31 @@ input {
   background-color: #DDE4FF;
   border-radius: 5px;
   border: none;
-  height: 36px;
+  width: 180px;
+  height: 40px;
+  box-shadow: -4px 6px 20px 2px rgba(35, 43, 56, 0.2);
 }
 .totaltime {
   width: 100%;
+  padding-left: 45px;
 }
 #deptext {
     align-items: center;
-    height: 36px;
+    width: 180px;
+    height: 40px;
+    radius: 10px;
+}
+#deptextsmal {
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    radius: 10px;
+}
+#deptime {
+  background: #FFFFFF;
+}
+#lname{
+  background: #FFFFFF;
 }
 h3 {
   font-family: 'Montserrat';
@@ -33,4 +55,30 @@ h3 {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+}
+.close {
+  font-size: 30px;
+  background: none;
+  border: none;
+  float: right;
+  &::after {
+    display: inline-block;
+    content: "\00d7";
+  }
+}
+.btn-modal-close {
+    border: none;
+    background: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.modal-footer {
+    text-align: right;
+}
+.btn-modal-apply {
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: #1E3356;
+    color: white;
 }

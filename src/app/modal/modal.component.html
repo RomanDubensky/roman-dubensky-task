@@ -1,44 +1,61 @@
 <div class="modal-wrap">
-  <div class="info">
-    <h3>Additional Info</h3>
-
-    <div class="addinfo">
-      <form class="depinfo">
-        <label for="departure">Departure</label><br>
-        <input type="text" id="deptext" name="deptext" size="19"><br>
-        <label for="time">Departure date and time</label><br>
-        <input type="datetime-local" id="deptime" name="deptime">
-      </form>
-      <form class="totaltime">
-        <label for="departure">Total time</label><br>
-        <input type="text" id="deptext" name="deptext" size="8"><br>
-      </form>
-      <form class="arrinfo">
-        <label for="departure">Arrival</label><br>
-        <input type="text" id="deptext" name="deptext" size="19"><br>
-        <label for="time">Arrival date and time</label><br>
-        <input type="datetime-local" id="deptime" name="deptime">
-      </form>
-    </div>
-  </div>
-  <div class="car-details">
-    <div class="car-information">
-    <h3>Car information</h3>
-      <form class="makemodel">
-        <label for="fname">Make & model</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        </form>
-        <form class="regnumber">
-        <label for="lname">Registration number</label><br>
-        <input type="text" id="lname" name="lname" value=""><br><br>
-      </form>
-    </div>
-    <div class="driver-information">
-      <h3>Driver information</h3>
-      <form class="regnumber">
-      <label for="lname">Registration number</label><br>
-      <input type="text" id="lname" name="lname" value=""><br><br>
-    </form>
-    </div>
-  </div>
+  <button type="button"
+     name="button"
+     class="close"
+     (click)="closeDialog()"></button>
+  <form class="info">
+     <h3 style="padding-left:15px">Additional Info</h3>
+     <div class="addinfo">
+        <div class="depinfo">
+           <label for="departure">Departure</label><br>
+           <input type="text" id="deptext" name="deptext" size="19" class="icon-location:before"><br>
+           <label for="time">Departure date and time</label><br>
+           <input type="datetime-local" id="deptime" name="deptime">
+        </div>
+        <div class="totaltime">
+           <label for="departure">Total time</label><br>
+           <input type="text" id="deptextsmal" name="deptext" size="8"><br>
+        </div>
+        <div class="arrinfo">
+           <label for="departure">Arrival</label><br>
+           <input type="text" id="deptext" name="deptext" size="19"><br>
+           <label for="time">Arrival date and time</label><br>
+           <input type="datetime-local" id="deptime" name="deptime">
+        </div>
+     </div>
+     <div class="car-details">
+       <div class="driver-information">
+          <h3>Driver information</h3>
+          <div class="regnumber">
+             <label for="lname">Driver</label><br>
+             <input type="text" id="lname" name="lname" value=""><br><br>
+          </div>
+          <div class="regnumber">
+             <label for="lname">Other</label><br>
+             <input type="text" id="lname" name="lname" value=""><br><br>
+          </div>
+       </div>
+        <div class="car-information">
+           <h3>Car information</h3>
+           <div class="makemodel">
+              <label for="fname">Make & model</label><br>
+              <input type="text" id="fname" name="fname" value=""><br>
+           </div>
+           <div class="regnumber">
+              <label for="lname">Registration number</label><br>
+              <input type="text" id="lname" name="lname" value=""><br><br>
+           </div>
+        </div>
+     </div>
+     <div class="modal-footer">
+       <button type="button"
+          name="button"
+          class="btn-modal-close"
+          (click)="closeDialog()">Drafts</button>
+       <button type="button"
+          name="button"
+          class="btn-modal-apply"
+          (click)="closeDialog()">Save to log book</button>
+     </div>
+  </form>
 </div>

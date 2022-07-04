@@ -15,8 +15,8 @@ export class AppComponent {
   }
   addTripInfo() {
     let dialogRef = this.dialog.open(ModalComponent, {
-      height: '400px',
-      width: '600px',
+      height: '540px',
+      width: '640px',
     });
   }
 }
